@@ -8,30 +8,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-<style>
-  :root { --mist:#F3F6EA; --card:#FFFFFF; --ink:#2E2A3B; --ink-soft:#6B6680; --pistachio:#8CC26A; --pistachio-deep:#4F7A5C; --line:#E6EDD8; }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--mist); color:var(--ink); font-family:"Nunito", system-ui, sans-serif; line-height:1.6; font-size:17px; }
-  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
-  h1, h2 { font-family:"Fredoka", "Nunito", sans-serif; font-weight:600; color:var(--ink); }
-  h1 { font-size:2rem; margin:0 0 4px; }
-  h2 { font-size:1.35rem; margin:36px 0 10px; color:var(--pistachio-deep); }
-  .sub { color:var(--ink-soft); margin:0 0 24px; }
-  .card { background:var(--card); border-radius:20px; padding:20px 22px; margin:0 0 20px; border:1px solid var(--line); }
-  .lang { display:flex; gap:10px; margin:0 0 28px; }
-  .lang a { text-decoration:none; color:var(--pistachio-deep); background:var(--card); border:1px solid var(--line); border-radius:999px; padding:6px 16px; font-weight:700; }
-  a { color:var(--pistachio-deep); }
-  ul { padding-left:22px; } li { margin:4px 0; }
-  hr { border:0; border-top:1px solid var(--line); margin:48px 0; }
-  footer { color:var(--ink-soft); font-size:0.9rem; margin-top:40px; }
-</style>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
 <main>
 
+<p class="crumbs"><a href="index.html">Zipstache</a> · <a href="delete.html">Delete my account</a></p>
 <h1>Zipstache — Privacy policy</h1>
-<p class="sub">Ink Learning Studios · Effective date: 7 October 2026</p>
-<nav class="lang" aria-label="Language"><a href="#en">English</a><a href="#fr">Français</a></nav>
+<p class="sub">Ink Learning Studios · Effective date: 19 October 2026</p>
+<nav class="lang" aria-label="Language"><a href="#en">English</a><a href="#fr">Français</a><a href="delete.html">Delete my account / Supprimer mon compte</a></nav>
+
+<section id="delete" class="card">
+<h2>Delete your account / Supprimer ton compte</h2>
+<p>In the game: <strong>Settings › Cloud save › Delete my account and cloud save</strong> (immediate). Or e-mail <a href="mailto:ryad.iv@gmail.com?subject=Zipstache%20-%20delete%20my%20account">ryad.iv@gmail.com</a> with your player code: done within 30 days.</p>
+<p lang="fr">Dans le jeu : <strong>Réglages › Sauvegarde cloud › Supprimer mon compte et ma sauvegarde</strong> (immédiat). Ou par e-mail à <a href="mailto:ryad.iv@gmail.com?subject=Zipstache%20-%20supprimer%20mon%20compte">ryad.iv@gmail.com</a> avec ton code joueur : fait sous 30 jours.</p>
+<p><a href="delete.html"><strong>Full steps, what is deleted and what is kept / Toutes les étapes, ce qui est supprimé et ce qui reste</strong></a></p>
+</section>
 
 <section id="en">
 <div class="card">
@@ -41,15 +33,22 @@
 <h2>The short version</h2>
 <ul>
   <li>No account is required and nothing is required from you to play. The game works offline.</li>
-  <li>Your progress (levels, stars, streak, settings, purchases) is stored <strong>on your device only</strong>. We have no server of our own.</li>
+  <li>Your progress (walks, fish, photos, streak, settings, purchases) is stored on your device. If you sign in with Play Games, a copy is also <strong>backed up in the cloud</strong> so you never lose it: in your Google account (Play Games saved games) and in our own database (Google Firebase, servers in the European Union).</li>
   <li>Optional Google services (Play Games, Analytics, ads, purchases) process some pseudonymous data, described below.</li>
 </ul>
 
 <h2>Data stored on your device</h2>
 <p>Campaign progress, stars, daily and weekly results, unlocked skins and outfits, settings (sound, vibrations, reminder) and the list of your purchases are saved locally in the app's private storage. They never leave the device, except through Google Play's own automatic backup if you enabled it on your phone. Uninstalling the app erases them.</p>
 
+<h2>Cloud save (when you sign in with Play Games)</h2>
+<p>When you are signed in with Play Games, your game progress (walks solved, fish, photos on the wall, daily and weekly results, streak, hints, purchases owned, settings of the game) is saved as one record: in your Google account through Play Games saved games, and in our database on Google Cloud Firestore (Firebase, region europe-west1, Belgium). The record is tied to a random player id created by Firebase Authentication from your Play Games sign-in; it contains <strong>no name, e-mail or contact detail</strong>. Only you (through the game) and we (to help you, for example to restore a lost progress) can read it. The game shows this player id as a <em>player code</em> in Settings › Cloud save: give it to us when you write to support.</p>
+<p>You can delete your account and the cloud copy at any time in <strong>Settings › Cloud save › Delete my account and cloud save</strong>, or by writing to us (<a href="delete.html">how, and what is deleted</a>). Backup then stays off on that phone until you turn it back on. Without Play Games sign-in, nothing is saved in the cloud.</p>
+
 <h2>Google Play Games Services (optional)</h2>
 <p>If you sign in with Play Games, Google provides us with your player id and display name so the game can submit your scores and achievements to the leaderboards. Sign-in is optional, can be skipped, and is governed by <a href="https://policies.google.com/privacy">Google's privacy policy</a>. You can revoke the game's access from the Play Games app at any time.</p>
+
+<h2>Crash reports (Firebase Crashlytics)</h2>
+<p>If the game crashes, Firebase Crashlytics sends us a technical report (the error, device model, OS and app version, a random installation id) so we can fix it. It contains no personal content.</p>
 
 <h2>Firebase Analytics and Remote Config</h2>
 <p>We use Google Firebase Analytics to understand how the game is played (which levels are finished or abandoned, how long they take, whether hints are used) and to fix difficulty. The data is pseudonymous: an app-instance id, the advertising id of the device, device model and OS version, country, app version and in-app events. No name, e-mail or precise location. Firebase Remote Config downloads configuration (skins, events, puzzle settings); it sends the same device information to work. See <a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a>.</p>
@@ -73,10 +72,10 @@
 <p>Zipstache is made for a general audience and is not directed at children under 13. We do not knowingly collect personal data from children. If you believe a child provided us data, contact us and we will delete it.</p>
 
 <h2>Retention</h2>
-<p>Local data stays until you uninstall the app or clear its storage. Google retains Analytics and advertising data according to its own policies (Analytics events: up to 14 months by default for user-level data). Play Games data stays in your Google account until you remove the game's access.</p>
+<p>Local data stays until you uninstall the app or clear its storage. Google retains Analytics and advertising data according to its own policies (Analytics events: up to 14 months by default for user-level data). Play Games data stays in your Google account until you remove the game's access. The cloud copy in our database is kept while you use the game and deleted as soon as you ask (in the game or by e-mail).</p>
 
 <h2>Your rights</h2>
-<p>Under the GDPR and similar laws you can ask what data concerns you, have it corrected or erased, or object to processing. Because we hold no server-side data, erasing the app's local data is done by uninstalling it; for Google-held data (Play Games, Analytics, ads) use your Google account controls. For anything else, write to <a href="mailto:ryad.iv@gmail.com">ryad.iv@gmail.com</a>: we answer within 30 days.</p>
+<p>Under the GDPR and similar laws you can ask what data concerns you, have it corrected or erased, or object to processing. Your cloud save in our database can be deleted from the game (Settings › Cloud save) or by writing to us with your player code; local data is erased by uninstalling the app; for Google-held data (Play Games, Analytics, ads) use your Google account controls. For anything else, write to <a href="mailto:ryad.iv@gmail.com">ryad.iv@gmail.com</a>: we answer within 30 days.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the new version is published at this address with a new effective date. Material changes are also mentioned in the app's release notes.</p>
@@ -86,7 +85,7 @@
 
 <section id="fr" lang="fr">
 <h1>Zipstache — Politique de confidentialité</h1>
-<p class="sub">Ink Learning Studios · Date d'effet : 7 octobre 2026</p>
+<p class="sub">Ink Learning Studios · Date d'effet : 19 octobre 2026</p>
 
 <div class="card">
 <p>Zipstache est un jeu de puzzle édité par <strong>Ink Learning Studios</strong> (« l'éditeur », « nous »). Cette politique explique en termes simples ce que l'application fait des données. Questions : <a href="mailto:ryad.iv@gmail.com">ryad.iv@gmail.com</a>.</p>
@@ -95,15 +94,22 @@
 <h2>En bref</h2>
 <ul>
   <li>Aucun compte n'est nécessaire et rien ne t'est demandé pour jouer. Le jeu fonctionne hors ligne.</li>
-  <li>Ta progression (niveaux, étoiles, série, réglages, achats) est stockée <strong>uniquement sur ton appareil</strong>. Nous n'avons aucun serveur.</li>
+  <li>Ta progression (balades, poissons, photos, série, réglages, achats) est stockée sur ton appareil. Si tu te connectes à Play Jeux, une copie est aussi <strong>sauvegardée dans le cloud</strong> pour ne jamais la perdre : dans ton compte Google (jeux enregistrés Play Jeux) et dans notre propre base de données (Google Firebase, serveurs dans l'Union européenne).</li>
   <li>Des services Google optionnels (Play Jeux, Analytics, publicités, achats) traitent certaines données pseudonymes, décrites ci-dessous.</li>
 </ul>
 
 <h2>Données stockées sur ton appareil</h2>
 <p>La progression de l'aventure, les étoiles, les résultats des balades du jour et de la semaine, les ambiances et tenues débloquées, les réglages (son, vibrations, rappel) et la liste de tes achats sont enregistrés localement dans l'espace privé de l'application. Ils ne quittent pas l'appareil, sauf via la sauvegarde automatique de Google Play si tu l'as activée sur ton téléphone. Désinstaller l'application les efface.</p>
 
+<h2>Sauvegarde cloud (si tu te connectes à Play Jeux)</h2>
+<p>Quand tu es connecté à Play Jeux, ta progression (balades réussies, poissons, photos du mur, résultats du jour et de la semaine, série, indices, achats possédés, réglages du jeu) est sauvegardée en un seul enregistrement : dans ton compte Google via les jeux enregistrés Play Jeux, et dans notre base de données Google Cloud Firestore (Firebase, région europe-west1, Belgique). L'enregistrement est rattaché à un identifiant de joueur aléatoire créé par Firebase Authentication à partir de ta connexion Play Jeux ; il ne contient <strong>ni nom, ni e-mail, ni coordonnées</strong>. Seuls toi (par le jeu) et nous (pour t'aider, par exemple pour restaurer une progression perdue) pouvons le lire. Le jeu affiche cet identifiant comme <em>code joueur</em> dans Réglages › Sauvegarde cloud : donne-le-nous quand tu écris au support.</p>
+<p>Tu peux supprimer ton compte et la copie cloud à tout moment dans <strong>Réglages › Sauvegarde cloud › Supprimer mon compte et ma sauvegarde</strong>, ou en nous écrivant (<a href="delete.html">comment, et ce qui est supprimé</a>). La sauvegarde reste ensuite coupée sur ce téléphone jusqu'à ce que tu la rallumes. Sans connexion Play Jeux, rien n'est sauvegardé dans le cloud.</p>
+
 <h2>Google Play Jeux (optionnel)</h2>
 <p>Si tu te connectes à Play Jeux, Google nous transmet ton identifiant de joueur et ton pseudo pour que le jeu envoie tes scores et succès aux classements. La connexion est facultative, peut être ignorée, et relève de la <a href="https://policies.google.com/privacy?hl=fr">politique de confidentialité de Google</a>. Tu peux retirer l'accès du jeu depuis l'application Play Jeux à tout moment.</p>
+
+<h2>Rapports de plantage (Firebase Crashlytics)</h2>
+<p>Si le jeu plante, Firebase Crashlytics nous envoie un rapport technique (l'erreur, le modèle de l'appareil, les versions du système et de l'application, un identifiant d'installation aléatoire) pour que nous puissions corriger le problème. Il ne contient aucun contenu personnel.</p>
 
 <h2>Firebase Analytics et Remote Config</h2>
 <p>Nous utilisons Google Firebase Analytics pour comprendre comment on joue (niveaux terminés ou abandonnés, durée, usage des indices) et ajuster la difficulté. Les données sont pseudonymes : identifiant d'instance de l'application, identifiant publicitaire de l'appareil, modèle et version du système, pays, version de l'application et événements dans le jeu. Ni nom, ni e-mail, ni position précise. Firebase Remote Config télécharge la configuration (ambiances, événements, réglages des grilles) et transmet les mêmes informations techniques pour fonctionner. Voir <a href="https://firebase.google.com/support/privacy?hl=fr">Confidentialité et sécurité dans Firebase</a>.</p>
@@ -127,16 +133,16 @@
 <p>Zipstache s'adresse à un public général et n'est pas destiné aux enfants de moins de 13 ans. Nous ne collectons pas sciemment de données personnelles d'enfants. Si tu penses qu'un enfant nous a transmis des données, contacte-nous et nous les supprimerons.</p>
 
 <h2>Conservation</h2>
-<p>Les données locales restent jusqu'à la désinstallation de l'application ou l'effacement de son stockage. Google conserve les données Analytics et publicitaires selon ses propres règles (événements Analytics : jusqu'à 14 mois par défaut pour les données au niveau utilisateur). Les données Play Jeux restent dans ton compte Google jusqu'à ce que tu retires l'accès du jeu.</p>
+<p>Les données locales restent jusqu'à la désinstallation de l'application ou l'effacement de son stockage. Google conserve les données Analytics et publicitaires selon ses propres règles (événements Analytics : jusqu'à 14 mois par défaut pour les données au niveau utilisateur). Les données Play Jeux restent dans ton compte Google jusqu'à ce que tu retires l'accès du jeu. La copie cloud de notre base est conservée tant que tu utilises le jeu et supprimée dès que tu le demandes (dans le jeu ou par e-mail).</p>
 
 <h2>Tes droits</h2>
-<p>Au titre du RGPD et de lois similaires, tu peux demander quelles données te concernent, les faire corriger ou effacer, ou t'opposer à un traitement. Comme nous ne détenons aucune donnée côté serveur, effacer les données locales du jeu se fait en le désinstallant ; pour les données détenues par Google (Play Jeux, Analytics, publicités), utilise les contrôles de ton compte Google. Pour le reste, écris à <a href="mailto:ryad.iv@gmail.com">ryad.iv@gmail.com</a> : nous répondons sous 30 jours.</p>
+<p>Au titre du RGPD et de lois similaires, tu peux demander quelles données te concernent, les faire corriger ou effacer, ou t'opposer à un traitement. Ta sauvegarde cloud dans notre base peut être supprimée depuis le jeu (Réglages › Sauvegarde cloud) ou en nous écrivant avec ton code joueur ; les données locales s'effacent en désinstallant le jeu ; pour les données détenues par Google (Play Jeux, Analytics, publicités), utilise les contrôles de ton compte Google. Pour le reste, écris à <a href="mailto:ryad.iv@gmail.com">ryad.iv@gmail.com</a> : nous répondons sous 30 jours.</p>
 
 <h2>Modifications</h2>
 <p>Si cette politique change, la nouvelle version est publiée à cette adresse avec une nouvelle date d'effet. Les changements importants sont aussi signalés dans les notes de version de l'application.</p>
 </section>
 
-<footer>© 2026 Ink Learning Studios · <a href="index.html">Zipstache</a></footer>
+<footer><a href="index.html">Zipstache</a><a href="delete.html">Delete my account / Supprimer mon compte</a><a href="../">Ink Learning Studios</a>© 2026 Ink Learning Studios</footer>
 </main>
 </body>
 </html>

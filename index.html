@@ -1,182 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flags Ink — World Flags Coloring & Quiz Game</title>
-  <meta name="description" content="Discover Flags Ink, the ultimate educational coloring game to learn and master world flags!">
-  <style>
-    :root {
-      --primary: #4F46E5;
-      --primary-hover: #4338CA;
-      --bg: #0F172A;
-      --card-bg: #1E293B;
-      --text: #F8FAFC;
-      --text-muted: #94A3B8;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    }
-
-    body {
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      padding: 3rem 1rem 2rem;
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .logo {
-      font-size: 2.8rem;
-      font-weight: 800;
-      background: linear-gradient(135deg, #6366F1, #A855F7, #EC4899);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 0.5rem;
-    }
-
-    .tagline {
-      font-size: 1.25rem;
-      color: var(--text-muted);
-      margin-bottom: 1.5rem;
-    }
-
-    main {
-      flex: 1;
-      max-width: 800px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 0 1rem 2rem;
-    }
-
-    .card {
-      background-color: var(--card-bg);
-      border-radius: 1rem;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-      margin: 2rem 0;
-    }
-
-    .feature-item {
-      background: rgba(255, 255, 255, 0.03);
-      padding: 1.25rem;
-      border-radius: 0.75rem;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    .feature-item h3 {
-      color: #6366F1;
-      margin-bottom: 0.5rem;
-      font-size: 1.1rem;
-    }
-
-    .btn-container {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-top: 2rem;
-    }
-
-    .btn {
-      display: inline-block;
-      background-color: var(--primary);
-      color: white;
-      padding: 0.9rem 2rem;
-      border-radius: 0.5rem;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background-color 0.2s ease;
-    }
-
-    .btn:hover {
-      background-color: var(--primary-hover);
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: var(--text-muted);
-      text-decoration: underline;
-      margin: 0 0.5rem;
-    }
-
-    footer a:hover {
-      color: var(--text);
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ink Learning Studios</title>
+<meta name="description" content="Small, hand-made games for Android by Ink Learning Studios: Flags Ink and Zipstache.">
+<style>
+  :root { --paper:#FAF9F5; --ink:#24222B; --soft:#6A6774; --line:#E6E3DA; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height:1.6; }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .sub { color: var(--soft); margin: 0 0 40px; }
+  .app { display:flex; gap:18px; align-items:flex-start; padding: 22px 0; border-top: 1px solid var(--line); }
+  .app:last-of-type { border-bottom: 1px solid var(--line); }
+  .dot { flex: none; width: 44px; height: 44px; border-radius: 14px; }
+  .app h2 { margin: 0 0 4px; font-size: 1.25rem; }
+  .app h2 a { color: var(--ink); text-decoration: none; }
+  .app h2 a:hover, .app h2 a:focus-visible { text-decoration: underline; }
+  .app p { margin: 0 0 8px; color: var(--soft); }
+  .links a { color: var(--ink); margin-right: 16px; font-size: .95rem; }
+  a:focus-visible { outline: 3px solid #8CC26A; outline-offset: 2px; }
+  footer { margin-top: 40px; color: var(--soft); font-size: .9rem; }
+  footer a { color: var(--soft); }
+</style>
 </head>
 <body>
+<main>
+  <h1>Ink Learning Studios</h1>
+  <p class="sub">Small, hand-made games for Android.</p>
 
-  <header>
-    <div class="logo">🎨 Flags Ink</div>
-    <p class="tagline">Color, discover, and master flags from all over the world!</p>
-  </header>
-
-  <main>
-    <div class="card">
-      <h2>About the Game</h2>
-      <p style="margin-top: 0.5rem;">
-        <strong>Flags Ink</strong> is a fun and educational mobile game designed to help you learn geography through interactive coloring and quizzes. Fill in flag regions with accuracy, test your speed in Blitz Mode, and build your flag collection!
-      </p>
-
-      <div class="features">
-        <div class="feature-item">
-          <h3>🎯 Adventure Mode</h3>
-          <p>Color every flag section carefully to unlock new countries and expand your geographical knowledge.</p>
-        </div>
-        <div class="feature-item">
-          <h3>⚡ Blitz Mode</h3>
-          <p>Challenge the clock, guess flags quickly, and push your high score to the limit.</p>
-        </div>
-        <div class="feature-item">
-          <h3>💡 Visual Learning</h3>
-          <p>An intuitive and rewarding way to memorize national colors and flag designs effortlessly.</p>
-        </div>
-      </div>
-
-      <div class="btn-container">
-        <!-- Replace with your actual Google Play package link -->
-        <a href="https://play.google.com/store/apps/details?id=com.inktalelearning.flagsink" class="btn" target="_blank" rel="noopener">
-          Get it on Google Play
-        </a>
-      </div>
+  <section class="app">
+    <span class="dot" style="background:#8CC26A" aria-hidden="true"></span>
+    <div>
+      <h2><a href="Zipstache/">Zipstache</a></h2>
+      <p>A cozy path puzzle with Pistache the kitten. Draw his walk across every tile.</p>
+      <p class="links"><a href="Zipstache/privacy.html">Privacy</a><a href="Zipstache/delete.html">Delete my account</a></p>
     </div>
-  </main>
+  </section>
 
-  <footer>
-    <p>&copy; 2026 Flags Ink. All rights reserved.</p>
-    <p style="margin-top: 0.5rem;">
-      <a href="./privacy.html">Privacy Policy</a> | 
-      <a href="./app-ads.txt">app-ads.txt</a>
-    </p>
-  </footer>
+  <section class="app">
+    <span class="dot" style="background:#6366F1" aria-hidden="true"></span>
+    <div>
+      <h2><a href="flags-ink/">Flags Ink</a></h2>
+      <p>Colour, discover and master the flags of the world.</p>
+      <p class="links"><a href="https://play.google.com/store/apps/details?id=com.inktalelearning.flagsink">Google Play</a><a href="privacy.html">Privacy</a></p>
+    </div>
+  </section>
 
+  <footer>Contact: <a href="mailto:ryad.iv@gmail.com">ryad.iv@gmail.com</a> · © 2026 Ink Learning Studios</footer>
+</main>
 </body>
 </html>

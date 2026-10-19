@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zipstache — Cozy Cat Puzzle</title>
+<meta name="description" content="Draw Pistache's walk across every tile. A cozy logic puzzle game for Android by Ink Learning Studios.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style>
+  .hero { display: grid; grid-template-columns: 1fr auto; gap: 8px 24px; align-items: end; margin: 8px 0 28px; }
+  .hero h1 { font-size: clamp(2.4rem, 8vw, 3.4rem); margin: 0; }
+  .hero .tag { font-size: 1.2rem; color: var(--ink-soft); margin: 6px 0 18px; }
+  .hero img { width: clamp(120px, 28vw, 200px); height: auto; grid-row: 1 / span 2; grid-column: 2; }
+  .soon { display: inline-block; background: var(--pistachio); color: #fff; font-family: "Fredoka", sans-serif; font-size: 1.05rem; padding: 10px 22px; border-radius: 999px; box-shadow: 0 4px 0 var(--pistachio-deep); }
+  .rules li { margin: 6px 0; }
+  @media (max-width: 480px) { .hero { grid-template-columns: 1fr; } .hero img { grid-row: auto; grid-column: 1; justify-self: center; } }
+</style>
+</head>
+<body>
+<main>
+
+<section class="hero">
+  <div>
+    <h1>Zipstache</h1>
+    <p class="tag">Draw Pistache's walk across every tile. One small brain teaser a day.</p>
+    <span class="soon">Coming soon to Google Play</span>
+  </div>
+  <img src="pistache.webp" alt="Pistache, a ginger kitten with a little green spot on his cheek" width="463" height="720">
+</section>
+
+<div class="card">
+<p>This is Pistache. Ginger kitten, little green spot on his cheek, big fan of walks. You draw the route with one finger.</p>
+<p>The rules fit on a napkin:</p>
+<ul class="rules">
+  <li>visit every tile once,</li>
+  <li>eat from the bowls in order,</li>
+  <li>finish in his basket.</li>
+</ul>
+<p>You'll get it in ten seconds. You'll still be thinking about it at dinner. Every puzzle has exactly one solution, and logic always gets you there.</p>
+</div>
+
+<p lang="fr">En français : trace la balade de Pistache sur chaque case, mange dans les gamelles dans l'ordre, finis dans son panier. Un petit casse-tête par jour, une seule solution, jamais de hasard.</p>
+
+<footer>
+  <a href="privacy.html">Privacy policy / Confidentialité</a>
+  <a href="delete.html">Delete my account / Supprimer mon compte</a>
+  <a href="mailto:ryad.iv@gmail.com?subject=Zipstache">Contact</a>
+  <br>© 2026 <a href="../">Ink Learning Studios</a>
+</footer>
+</main>
+</body>
+</html>
