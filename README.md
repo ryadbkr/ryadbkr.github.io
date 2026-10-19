@@ -10,7 +10,7 @@ Served by GitHub Pages at https://ryadbkr.github.io/
 | `/flags-ink/` | Flags Ink page | studio page |
 | `/Zipstache/` | Zipstache page | studio page, Zipstache footer links |
 | `/Zipstache/privacy.html` | Zipstache privacy policy (EN/FR) | Play listing + in-app link (`SettingsScreen.PRIVACY_POLICY_URL`) — **do not move** |
-| `/Zipstache/delete.html` | Zipstache account deletion (EN/FR) | Play Console › Data safety › Delete account URL — **do not move** |
+| `/Zipstache/delete.html` | Zipstache account deletion (EN/FR) | Play Console › Data safety › Delete account URL — **do not move**. Linked only from the privacy page (end), never from the home pages |
 | `/Zipstache/site.css`, `pistache.webp` | Shared style and art of the Zipstache pages | |
 
 Rules
