@@ -4,7 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zipstache — Cozy Cat Puzzle</title>
-<meta name="description" content="Draw Pistache's walk across every tile. A cozy logic puzzle game for Android by Ink Learning Studios.">
+<meta name="description" content="Draw one line through every tile and help Pistache the kitten get his bowl back. 185+ cozy logic puzzles, a new walk every day. Free on Android.">
+<meta property="og:title" content="Zipstache — Cozy Cat Puzzle">
+<meta property="og:description" content="One line. One kitten. 185+ cozy logic puzzles, a new walk every day. Free on Google Play.">
+<meta property="og:image" content="https://ryadboubaker.com/Zipstache/og.jpg">
+<meta property="og:url" content="https://ryadboubaker.com/Zipstache/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
@@ -17,7 +23,16 @@
   .soon { display: inline-block; background: var(--pistachio); color: #fff; font-family: "Fredoka", sans-serif; font-size: 1.05rem; padding: 10px 22px; border-radius: 999px; box-shadow: 0 4px 0 var(--pistachio-deep); text-decoration: none; }
   .soon:hover { filter: brightness(1.05); }
   .soon:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--pistachio-deep); }
+  .free { display: block; color: var(--ink-soft); font-size: .95rem; margin-top: 10px; }
+  .shot { display: block; width: 100%; height: auto; border-radius: 20px; margin: 0 0 20px; border: 1px solid var(--line); }
   .rules li { margin: 6px 0; }
+  .inside { list-style: none; padding: 0; margin: 0; }
+  .inside li { margin: 10px 0; padding-left: 28px; position: relative; }
+  .inside li::before { content: ""; position: absolute; left: 4px; top: .55em; width: 12px; height: 12px; border-radius: 50%; background: var(--apricot); }
+  .inside b { font-family: "Fredoka", sans-serif; font-weight: 600; }
+  .card > :first-child { margin-top: 0; }
+  .other p { margin: 0 0 12px; }
+  .other p:last-child { margin: 0; }
   @media (max-width: 480px) { .hero { grid-template-columns: 1fr; } .hero img { grid-row: auto; grid-column: 1; justify-self: center; } }
 </style>
 </head>
@@ -27,24 +42,44 @@
 <section class="hero">
   <div>
     <h1>Zipstache</h1>
-    <p class="tag">Draw Pistache's walk across every tile. One small brain teaser a day.</p>
-    <a class="soon" href="https://play.google.com/store/apps/details?id=com.inktalelearning.zipstache&amp;utm_source=site&amp;utm_medium=web">Get it on Google Play — free</a>
+    <p class="tag">One line. One kitten. Draw Pistache's walk through every tile and get his bowl back.</p>
+    <a class="soon" href="https://play.google.com/store/apps/details?id=com.inktalelearning.zipstache&amp;utm_source=site&amp;utm_medium=web">Get it on Google Play</a>
+    <span class="free">Free on Android · English, Français, Português (Brasil)</span>
   </div>
   <img src="pistache.webp" alt="Pistache, a ginger kitten with a little green spot on his cheek" width="463" height="720">
 </section>
 
+<img class="shot" src="board.webp" alt="Pistache pulling his yarn along a numbered path across a pastel puzzle board" width="1200" height="628">
+
 <div class="card">
-<p>This is Pistache. Ginger kitten, little green spot on his cheek, big fan of walks. You draw the route with one finger.</p>
+<p>This is Pistache. Ginger kitten, little green spot on his cheek, new in a little house. Biscotte the mouse lived there first, and she has hidden his bowls. You draw his walk with one finger to find them.</p>
 <p>The rules fit on a napkin:</p>
 <ul class="rules">
-  <li>visit every tile once,</li>
-  <li>eat from the bowls in order,</li>
-  <li>finish in his basket.</li>
+  <li>start from Pistache,</li>
+  <li>visit every tile exactly once,</li>
+  <li>reach the bowls in order, 1, 2, 3…</li>
+  <li>and end on the last bowl.</li>
 </ul>
-<p>You'll get it in ten seconds. You'll still be thinking about it at dinner. Every puzzle has exactly one solution, and logic always gets you there.</p>
+<p>You'll get it in ten seconds. You'll still be thinking about it at dinner. Every puzzle has exactly one solution, and logic always gets you there — no luck, no timer that punishes you, no lives to lose.</p>
 </div>
 
-<p lang="fr">En français : trace la balade de Pistache sur chaque case, mange dans les gamelles dans l'ordre, finis dans son panier. Un petit casse-tête par jour, une seule solution, jamais de hasard.</p>
+<div class="card">
+<h2>What's inside</h2>
+<ul class="inside">
+  <li><b>185+ walks</b> across seven rooms of the house, from the garden to the library, each room bringing one new idea: rooms, tunnels, hidden bowls, clocks, and Biscotte herself running across the board.</li>
+  <li><b>A new walk every day</b>, the same for everyone, and a weekly five-walk challenge from Biscotte.</li>
+  <li><b>Three fish per walk</b>: one for finishing, one for speed, one for a perfect run with no going back.</li>
+  <li><b>Pistache's photo wall</b>: win snapshots of his life in the house, frame them, and dress your board in seasonal themes.</li>
+  <li><b>Golden doors</b>: an optional, harder trial at the end of each chapter, for those who want more.</li>
+</ul>
+</div>
+
+<img class="shot" src="wall.webp" alt="Pistache pointing at his photo wall, snapshots hung on a cord with wooden pegs" width="1200" height="628" loading="lazy">
+
+<div class="card other">
+<p lang="fr"><b>En français</b> — trace la balade de Pistache sur chaque case : pars de Pistache, passe par toutes les cases une seule fois, mange dans les gamelles dans l'ordre et termine sur la dernière. Plus de 185 balades, une nouvelle chaque jour, une seule solution, jamais de hasard. Gratuit sur Android.</p>
+<p lang="pt-BR"><b>Em português</b> — trace o passeio do Pistache por todas as casinhas: comece no Pistache, passe por cada casinha uma vez só, visite as tigelas em ordem e termine na última. Mais de 185 passeios, um novo todo dia, uma única solução. Grátis no Android.</p>
+</div>
 
 <footer>
   <a href="privacy.html">Privacy policy / Confidentialité</a>
