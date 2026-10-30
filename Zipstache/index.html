@@ -14,7 +14,9 @@
   .hero h1 { font-size: clamp(2.4rem, 8vw, 3.4rem); margin: 0; }
   .hero .tag { font-size: 1.2rem; color: var(--ink-soft); margin: 6px 0 18px; }
   .hero img { width: clamp(120px, 28vw, 200px); height: auto; grid-row: 1 / span 2; grid-column: 2; }
-  .soon { display: inline-block; background: var(--pistachio); color: #fff; font-family: "Fredoka", sans-serif; font-size: 1.05rem; padding: 10px 22px; border-radius: 999px; box-shadow: 0 4px 0 var(--pistachio-deep); }
+  .soon { display: inline-block; background: var(--pistachio); color: #fff; font-family: "Fredoka", sans-serif; font-size: 1.05rem; padding: 10px 22px; border-radius: 999px; box-shadow: 0 4px 0 var(--pistachio-deep); text-decoration: none; }
+  .soon:hover { filter: brightness(1.05); }
+  .soon:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--pistachio-deep); }
   .rules li { margin: 6px 0; }
   @media (max-width: 480px) { .hero { grid-template-columns: 1fr; } .hero img { grid-row: auto; grid-column: 1; justify-self: center; } }
 </style>
@@ -26,7 +28,7 @@
   <div>
     <h1>Zipstache</h1>
     <p class="tag">Draw Pistache's walk across every tile. One small brain teaser a day.</p>
-    <span class="soon">Coming soon to Google Play</span>
+    <a class="soon" href="https://play.google.com/store/apps/details?id=com.inktalelearning.zipstache&amp;utm_source=site&amp;utm_medium=web">Get it on Google Play — free</a>
   </div>
   <img src="pistache.webp" alt="Pistache, a ginger kitten with a little green spot on his cheek" width="463" height="720">
 </section>
