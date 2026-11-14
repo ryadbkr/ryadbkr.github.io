@@ -11,6 +11,7 @@ Served by GitHub Pages at https://ryadbkr.github.io/
 | `/Zipstache/` | Zipstache page | studio page, Zipstache footer links |
 | `/Zipstache/privacy.html` | Zipstache privacy policy (EN/FR) | Play listing + in-app link (`SettingsScreen.PRIVACY_POLICY_URL`) — **do not move** |
 | `/Zipstache/delete.html` | Zipstache account deletion (EN/FR) | Play Console › Data safety › Delete account URL — **do not move**. Linked only from the privacy page (end), never from the home pages |
+| `/qasim/privacy.html` | Qasim Mushtarak (قاسم مشترك) privacy policy (AR/EN/FR) | Play listing + in-app link (`Sheets.PRIVACY_URL`) — **do not move** |
 | `/Zipstache/site.css`, `pistache.webp` | Shared style and art of the Zipstache pages | |
 
 Rules
