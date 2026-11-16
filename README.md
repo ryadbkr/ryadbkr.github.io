@@ -12,6 +12,7 @@ Served by GitHub Pages at https://ryadbkr.github.io/
 | `/Zipstache/privacy.html` | Zipstache privacy policy (EN/FR) | Play listing + in-app link (`SettingsScreen.PRIVACY_POLICY_URL`) — **do not move** |
 | `/Zipstache/delete.html` | Zipstache account deletion (EN/FR) | Play Console › Data safety › Delete account URL — **do not move**. Linked only from the privacy page (end), never from the home pages |
 | `/rawabit/privacy.html` | Rawabit al-Kalimat (روابط الكلمات) privacy policy (AR/EN/FR) | Play listing + in-app link (`Sheets.PRIVACY_URL`) — **do not move** |
+| `/rawabit/delete.html` | Rawabit al-Kalimat: how to delete your data (AR/EN/FR) | Play Console › Data safety › delete data URL — **do not move** |
 | `/qasim/privacy.html` | Redirect to `/rawabit/privacy.html` (the app's working name before 16 Nov 2026) | nothing — kept so an old link still lands |
 | `/Zipstache/site.css`, `pistache.webp` | Shared style and art of the Zipstache pages | |
 
