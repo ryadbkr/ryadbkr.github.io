@@ -13,8 +13,8 @@
 <body>
 <main>
 <h1>Tuckle — Privacy policy</h1>
-<p class="sub">Ink Learning Studios · Effective date: 20 November 2026</p>
-<nav class="lang" aria-label="Language"><a href="#en">English</a><a href="#fr">Français</a></nav>
+<p class="sub">Ink Learning Studios · Effective date: 22 November 2026</p>
+<nav class="lang" aria-label="Language"><a href="#en">English</a><a href="#fr">Français</a><a href="delete.html">Delete your account</a></nav>
 
 <section id="en">
 <div class="card">
@@ -23,51 +23,103 @@
 
 <h2>The short version</h2>
 <ul>
-  <li><strong>The app collects no personal data and sends nothing over the internet.</strong> It does not even ask for internet access.</li>
-  <li>No account, no ads, no analytics, no tracking in this version.</li>
-  <li>Your progress stays on your phone.</li>
+  <li>No account is required to play, and the game works offline.</li>
+  <li>Your progress is stored on your device. If you sign in with Google Play Games or a Google account, a copy is backed up in the cloud so you never lose it.</li>
+  <li>Once signed in, you can appear in the game's ranking with a name, an avatar and your points.</li>
+  <li>Google services (Play Games, Firebase, ads, purchases, notifications) process some pseudonymous data, described below.</li>
+  <li>The online features arrive with updates: a feature described here that is not in your version yet collects nothing.</li>
 </ul>
 
 <h2>Data stored on your device</h2>
-<p>The levels you have won and their stars, your daily puzzle results and streak, your hints, and your settings (sound, vibrations) are saved in the app's private storage. They never leave the device, except through Google's own Android backup if you enabled it on your phone (governed by <a href="https://policies.google.com/privacy">Google's privacy policy</a>). Uninstalling the app erases them.</p>
+<p>The levels you have won, your daily puzzle results and streak, your hints, your profile (avatar, name) and your settings are saved in the app's private storage. Uninstalling the app erases them, except what Google's own Android backup keeps if you enabled it on your phone.</p>
+
+<h2>Cloud save (when you sign in)</h2>
+<p>When you sign in with Play Games or a Google account, your progress and your profile are saved as one record in our database on Google Cloud Firestore (Firebase, European Union) and, with Play Games, in your Google account (Play Games saved games). The record is tied to a random player id created by Firebase Authentication. If you sign in with a Google account, Firebase Authentication also keeps that account's e-mail address and public profile, only to recognise you next time: the game never shows them and we never use them to contact you. You can delete your account and the cloud copy at any time (<a href="delete.html">how, and what is deleted</a>).</p>
+
+<h2>The ranking</h2>
+<p>Once signed in, the game may publish one line about you, seen by every player: the name shown, your avatar and your points. Names are checked by a filter and can be reported by other players; a report is readable only by us and deleted once reviewed. You can leave the ranking at any time in the settings, and deleting your account deletes your line first.</p>
+
+<h2>Google Play Games Services</h2>
+<p>If you sign in with Play Games, Google gives us your player id and display name so the game can submit scores and achievements. Sign-in is optional and governed by <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+
+<h2>Analytics, crash reports and remote configuration</h2>
+<p>We use Firebase Analytics to understand how the game is played (levels finished or abandoned, time, hints) and to tune difficulty, Firebase Crashlytics to receive technical reports when the game crashes, and Firebase Remote Config to adjust content. These use pseudonymous data: an app-instance id, the advertising id, device model, OS and app version, country and in-app events. No name, e-mail or precise location.</p>
+
+<h2>Advertising (Google AdMob)</h2>
+<p>The game is free. It may offer a video you choose to watch to get a hint, and occasional ads between levels — never during a puzzle. Ads are served by Google AdMob, which may use the advertising id, an approximate location derived from the IP address and ad interactions to serve and measure ads. In the European Economic Area, the United Kingdom and Switzerland, a consent message is shown first and your choice can be changed in the settings. You can reset or delete your advertising id in your device settings.</p>
+
+<h2>Purchases (Google Play Billing)</h2>
+<p>Optional purchases (such as removing ads) are handled by Google Play. We never see your payment details; we only receive which product you own.</p>
+
+<h2>Notifications</h2>
+<p>News about the game may be sent with Firebase Cloud Messaging. Turn it off in the game's settings or in your phone's notification settings.</p>
 
 <h2>Sharing a result</h2>
-<p>When you tap "Share" after the daily puzzle, the app hands a short text (the puzzle's date, size, your time and stars) to the app you choose. Nothing is sent by us.</p>
+<p>When you tap "Share", the app hands a short text to the app you choose. Nothing is sent by us.</p>
 
 <h2>Children</h2>
-<p>Tuckle is made for a general audience and is not directed at children under 13. The app collects no personal data from anyone, children included.</p>
+<p>Tuckle is made for a general audience and is not directed at children under 13. We do not knowingly collect personal data from children; if you believe a child provided us data, write to us and we will delete it.</p>
+
+<h2>Retention and your rights</h2>
+<p>Local data stays until you uninstall the app. The cloud copy and the ranking line are kept while you use the game and deleted as soon as you ask. Google keeps analytics and advertising data under its own policies (analytics up to 14 months, crash reports 90 days). Under the GDPR and similar laws you can ask for access, correction or erasure: write to <a href="mailto:ryad.iv@gmail.com">ryad.iv@gmail.com</a>, we answer within 30 days.</p>
 
 <h2>Changes</h2>
-<p>Later versions may add optional online features (cloud backup, leaderboards, ads, purchases). Before any such version is published, this policy will be updated at this address with a new effective date, and the change will be mentioned in the app's release notes.</p>
+<p>If this policy changes, the new version is published at this address with a new effective date.</p>
 </section>
 
 <hr>
 
 <section id="fr" lang="fr">
 <h1>Tuckle — Politique de confidentialité</h1>
-<p class="sub">Ink Learning Studios · Date d’effet : 20 novembre 2026</p>
+<p class="sub">Ink Learning Studios · Date d’effet : 22 novembre 2026</p>
 <div class="card">
-<p>Tuckle est un jeu de casse-tête édité par <strong>Ink Learning Studios</strong> (« l’éditeur », « nous »). Cette politique explique simplement ce que l’application fait des données. Questions : <a href="mailto:ryad.iv@gmail.com">ryad.iv@gmail.com</a>.</p>
+<p>Tuckle est un jeu de casse-tête édité par <strong>Ink Learning Studios</strong> (« l’éditeur », « nous »). Cette politique explique simplement ce que l’application fait des données. Questions : <a href="mailto:ryad.iv@gmail.com">ryad.iv@gmail.com</a>.</p>
 </div>
 
 <h2>En bref</h2>
 <ul>
-  <li><strong>L’application ne collecte aucune donnée personnelle et n’envoie rien sur Internet.</strong> Elle ne demande même pas l’accès à Internet.</li>
-  <li>Ni compte, ni publicité, ni mesure d’audience, ni pistage dans cette version.</li>
-  <li>Ta progression reste sur ton téléphone.</li>
+  <li>Aucun compte n’est nécessaire pour jouer, et le jeu fonctionne hors ligne.</li>
+  <li>Ta progression est enregistrée sur ton appareil. Si tu te connectes avec Google Play Jeux ou un compte Google, une copie est sauvegardée dans le cloud pour ne jamais la perdre.</li>
+  <li>Une fois connecté, tu peux apparaître dans le classement du jeu avec un pseudo, un avatar et tes points.</li>
+  <li>Des services Google (Play Jeux, Firebase, publicité, achats, notifications) traitent certaines données pseudonymes, décrites ci-dessous.</li>
+  <li>Les fonctions en ligne arrivent avec les mises à jour : une fonction décrite ici qui n’est pas encore dans ta version ne collecte rien.</li>
 </ul>
 
 <h2>Données stockées sur ton appareil</h2>
-<p>Les niveaux gagnés et leurs étoiles, tes résultats et ta série à la grille du jour, tes indices et tes réglages (son, vibrations) sont enregistrés dans l’espace privé de l’application. Ils ne quittent jamais l’appareil, sauf par la sauvegarde Android de Google si tu l’as activée sur ton téléphone (régie par la <a href="https://policies.google.com/privacy?hl=fr">politique de confidentialité de Google</a>). Désinstaller l’application les efface.</p>
+<p>Les niveaux gagnés, tes résultats et ta série à la grille du jour, tes indices, ton profil (avatar, pseudo) et tes réglages sont enregistrés dans l’espace privé de l’application. Désinstaller l’application les efface, sauf ce que garde la sauvegarde Android de Google si tu l’as activée.</p>
+
+<h2>Sauvegarde cloud (quand tu te connectes)</h2>
+<p>Quand tu te connectes avec Play Jeux ou un compte Google, ta progression et ton profil sont enregistrés en un seul dossier dans notre base Google Cloud Firestore (Firebase, Union européenne) et, avec Play Jeux, dans ton compte Google (jeux enregistrés Play Jeux). Ce dossier est lié à un identifiant de joueur aléatoire créé par Firebase Authentication. Si tu te connectes avec un compte Google, Firebase Authentication garde aussi l’adresse e-mail et le profil public de ce compte, uniquement pour te reconnaître : le jeu ne les affiche jamais et nous ne nous en servons jamais pour te contacter. Tu peux supprimer ton compte et la copie cloud à tout moment (<a href="delete.html#fr">comment, et ce qui est supprimé</a>).</p>
+
+<h2>Le classement</h2>
+<p>Une fois connecté, le jeu peut publier une ligne à ton sujet, visible par tous les joueurs : le pseudo affiché, ton avatar et tes points. Les pseudos passent par un filtre et peuvent être signalés par les autres joueurs ; un signalement n’est lisible que par nous et supprimé une fois examiné. Tu peux quitter le classement à tout moment dans les réglages, et supprimer ton compte supprime ta ligne en premier.</p>
+
+<h2>Services Google Play Jeux</h2>
+<p>Si tu te connectes avec Play Jeux, Google nous transmet ton identifiant de joueur et ton nom pour enregistrer tes scores et tes succès. La connexion est facultative et régie par la <a href="https://policies.google.com/privacy?hl=fr">politique de confidentialité de Google</a>.</p>
+
+<h2>Mesure d’audience, rapports de plantage et configuration à distance</h2>
+<p>Nous utilisons Firebase Analytics pour comprendre comment le jeu est joué (niveaux finis ou abandonnés, temps, indices) et régler la difficulté, Firebase Crashlytics pour recevoir un rapport technique quand le jeu plante, et Firebase Remote Config pour ajuster le contenu. Ces outils utilisent des données pseudonymes : un identifiant d’installation, l’identifiant publicitaire, le modèle de l’appareil, les versions du système et de l’application, le pays et les événements du jeu. Ni nom, ni e-mail, ni position précise.</p>
+
+<h2>Publicité (Google AdMob)</h2>
+<p>Le jeu est gratuit. Il peut proposer une vidéo que tu choisis de regarder pour obtenir un indice, et de temps en temps une publicité entre deux niveaux, jamais pendant une grille. Les publicités sont servies par Google AdMob, qui peut utiliser l’identifiant publicitaire, une position approximative déduite de l’adresse IP et les interactions avec les annonces. Dans l’Espace économique européen, au Royaume-Uni et en Suisse, un message de consentement s’affiche d’abord et ton choix se modifie dans les réglages. Tu peux réinitialiser ou supprimer ton identifiant publicitaire dans les réglages de ton appareil.</p>
+
+<h2>Achats (Google Play Billing)</h2>
+<p>Les achats facultatifs (comme retirer les publicités) passent par Google Play. Nous ne voyons jamais tes moyens de paiement ; nous recevons seulement le produit que tu possèdes.</p>
+
+<h2>Notifications</h2>
+<p>Des nouvelles du jeu peuvent être envoyées par Firebase Cloud Messaging. Coupe-les dans les réglages du jeu ou dans les réglages de notifications de ton téléphone.</p>
 
 <h2>Partager un résultat</h2>
-<p>Quand tu touches « Partager » après la grille du jour, l’application transmet un court texte (la date, la taille de la grille, ton temps et tes étoiles) à l’application que tu choisis. Nous n’envoyons rien.</p>
+<p>Quand tu touches « Partager », l’application transmet un court texte à l’application que tu choisis. Nous n’envoyons rien.</p>
 
 <h2>Enfants</h2>
-<p>Tuckle s’adresse à un public général et n’est pas destiné aux enfants de moins de 13 ans. L’application ne collecte aucune donnée personnelle, de personne, enfants compris.</p>
+<p>Tuckle s’adresse à un public général et n’est pas destiné aux enfants de moins de 13 ans. Nous ne collectons pas sciemment de données d’enfants ; si tu penses qu’un enfant nous en a transmis, écris-nous et nous les supprimerons.</p>
+
+<h2>Conservation et droits</h2>
+<p>Les données locales restent jusqu’à la désinstallation. La copie cloud et la ligne du classement sont gardées tant que tu joues et supprimées dès que tu le demandes. Google conserve les données d’analyse et de publicité selon ses propres règles (analyse jusqu’à 14 mois, rapports de plantage 90 jours). Selon le RGPD et les lois similaires, tu peux demander l’accès, la rectification ou l’effacement : écris à <a href="mailto:ryad.iv@gmail.com">ryad.iv@gmail.com</a>, nous répondons sous 30 jours.</p>
 
 <h2>Modifications</h2>
-<p>De prochaines versions pourront ajouter des fonctions en ligne facultatives (sauvegarde cloud, classements, publicités, achats). Avant la publication d’une telle version, cette politique sera mise à jour à cette adresse avec une nouvelle date d’effet, et le changement sera signalé dans les notes de version.</p>
+<p>Si cette politique change, la nouvelle version est publiée à cette adresse avec une nouvelle date d’effet.</p>
 </section>
 
 <footer>Ink Learning Studios · <a href="mailto:ryad.iv@gmail.com">ryad.iv@gmail.com</a></footer>
