@@ -35,10 +35,10 @@
   <div class="code" id="code">······</div>
   <p class="muted">رمز المجموعة</p>
   <a class="btn primary" id="open" href="#">افتح في اللعبة</a>
-  <a class="btn secondary" href="https://play.google.com/store/apps/details?id=com.inktalelearning.rawabit">حمّل اللعبة من Google Play</a>
+  <a class="btn secondary" id="store" href="https://play.google.com/store/apps/details?id=com.inktalelearning.rawabit">حمّل اللعبة من Google Play</a>
   <ol>
-    <li>حمّل اللعبة وافتحها.</li>
-    <li>من تبويب «الترتيب» › «مجموعاتي» › «انضم برمز».</li>
+    <li>حمّل اللعبة من الزر أعلاه وافتحها: تظهر لك الدعوة وحدها.</li>
+    <li>إن لم تظهر: من تبويب «الترتيب» › «مجموعاتي» › «انضم برمز».</li>
     <li>اكتب الرمز أعلاه.</li>
   </ol>
 </main>
@@ -46,7 +46,9 @@
   // The code from ?c=, kept to the game's alphabet; the button opens the app on it, or the store.
   var raw = (new URLSearchParams(location.search).get('c') || '').toUpperCase();
   var code = /^[A-HJ-NP-Z2-9]{6}$/.test(raw) ? raw : '';
-  var store = 'https://play.google.com/store/apps/details?id=com.inktalelearning.rawabit';
+  // The store link carries the code as install referrer: the app offers the group on its first launch.
+  var store = 'https://play.google.com/store/apps/details?id=com.inktalelearning.rawabit' + (code ? '&referrer=group%3D' + code : '');
+  document.getElementById('store').href = store;
   if (code) {
     document.getElementById('code').textContent = code;
     document.getElementById('open').href = 'intent://join/' + code +
